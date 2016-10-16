@@ -39,6 +39,5 @@
             "Xloit\\Bridge\\Zend\\Form\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
     "prefer-stable": true
 }
