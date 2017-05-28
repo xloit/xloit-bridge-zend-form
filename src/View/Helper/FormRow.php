@@ -21,7 +21,7 @@ use Zend\Form\ElementInterface;
 use Zend\Form\View\Helper\FormRow as ZendFormRow;
 
 /**
- * A {@link FormRow} class
+ * A {@link FormRow} class.
  *
  * @package Xloit\Bridge\Zend\Form\View\Helper
  */
@@ -66,10 +66,11 @@ class FormRow extends ZendFormRow
      *
      *
      * @param ElementInterface $element
+     * @param null|string      $labelPosition
      *
      * @return string
      */
-    public function render(ElementInterface $element)
+    public function render(ElementInterface $element, $labelPosition = null)
     {
         $wrapClass = '';
 

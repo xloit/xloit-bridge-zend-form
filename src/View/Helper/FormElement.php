@@ -41,12 +41,11 @@ class FormElement extends ZendFormElement
     ];
 
     /**
-     * Invoke helper as function.
-     * Proxies to {@link render()}.
+     * Invoke helper as function. Proxies to {@link render()}.
      *
      * @param ElementInterface $element
      *
-     * @return string|static
+     * @return string|$this
      */
     public function __invoke(ElementInterface $element = null)
     {

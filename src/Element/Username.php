@@ -22,7 +22,6 @@ use Zend\Filter;
 use Zend\Form\Element\Text;
 use Zend\Form\ElementPrepareAwareInterface;
 use Zend\Form\FormInterface;
-use Zend\Validator;
 
 /**
  * An {@link Username} class.
@@ -34,8 +33,8 @@ class Username extends Text implements ElementPrepareAwareInterface
     /**
      * Constructor to prevent {@link Username} from being loaded more than once.
      *
-     * @param  null|int|string $name
-     * @param  array           $options
+     * @param string|null $name
+     * @param array       $options
      *
      * @throws \Zend\Form\Exception\InvalidArgumentException
      */
@@ -51,9 +50,9 @@ class Username extends Text implements ElementPrepareAwareInterface
     /**
      * Remove the password before rendering if the form fails in order to avoid any security issue.
      *
-     * @param  FormInterface $form
+     * @param FormInterface $form
      *
-     * @return mixed
+     * @return void
      */
     public function prepareElement(FormInterface $form)
     {
@@ -61,8 +60,7 @@ class Username extends Text implements ElementPrepareAwareInterface
     }
 
     /**
-     * Provide default input rules for this element.
-     * Attaches an password validator.
+     * Provide default input rules for this element and attaches an password validator.
      *
      * @return array
      */

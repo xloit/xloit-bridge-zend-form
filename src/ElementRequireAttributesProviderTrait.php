@@ -35,7 +35,7 @@ trait ElementRequireAttributesProviderTrait
      *
      * @param array $specifications
      *
-     * @return static
+     * @return $this
      * @throws \Xloit\Std\Exception\RuntimeException
      */
     final protected function addRequiredAttributeToFields(array $specifications)

@@ -58,10 +58,8 @@ class CkEditor extends Textarea
      *
      * @param array|Traversable $options
      *
-     * @throws InvalidArgumentException
-     * @throws \Zend\Stdlib\Exception\InvalidArgumentException
-     * @throws \Zend\Form\Exception\InvalidArgumentException
-     * @return static
+     * @return $this
+     * @throws \InvalidArgumentException
      */
     public function setOptions($options)
     {
@@ -82,9 +80,8 @@ class CkEditor extends Textarea
      *
      * @param array|Traversable $config
      *
-     * @throws InvalidArgumentException
-     * @throws \Zend\Stdlib\Exception\InvalidArgumentException
-     * @return static
+     * @return $this
+     * @throws \InvalidArgumentException
      */
     public function setEditorConfig($config)
     {

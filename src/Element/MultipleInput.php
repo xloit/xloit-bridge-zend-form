@@ -30,8 +30,8 @@ class MultipleInput extends Collection
     /**
      * Constructor to prevent {@link MultipleInput} from being loaded more than once.
      *
-     * @param int|string $name
-     * @param array      $options
+     * @param string|null $name
+     * @param array       $options
      */
     public function __construct($name = null, $options = [])
     {

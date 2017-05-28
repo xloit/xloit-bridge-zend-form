@@ -32,9 +32,9 @@ class Time extends ZendDate
      * Accepted options for DateTime:
      * - format: A \DateTime compatible string
      *
-     * @param  array|\Traversable $options
+     * @param array|\Traversable $options
      *
-     * @return static
+     * @return $this
      */
     public function setOptions($options)
     {
@@ -51,7 +51,7 @@ class Time extends ZendDate
     }
 
     /**
-     * Provide default input rules for this element Attaches default validators for the Date input.
+     * Provide default input rules for this element and attaches default validators for the Date input.
      *
      * @return array
      */

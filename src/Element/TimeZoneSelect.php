@@ -18,7 +18,6 @@
 namespace Xloit\Bridge\Zend\Form\Element;
 
 use DateTimeZone;
-use Xloit\Bridge\Zend\Form\Exception;
 use Zend\Form\Element\Select;
 use Zend\Validator\Explode as ExplodeValidator;
 use Zend\Validator\InArray as InArrayValidator;
@@ -67,8 +66,7 @@ class TimeZoneSelect extends Select
      *
      * @param array $options
      *
-     * @return static
-     * @throws Exception\DomainException
+     * @return $this
      */
     public function setValueOptions(array $options)
     {

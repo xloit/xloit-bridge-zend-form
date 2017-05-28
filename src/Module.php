@@ -25,7 +25,7 @@ class Module
     public function getConfig()
     {
         return [
-            'filters' => [
+            'form_elements' => [
                 'aliases'   => [
                     'checkbox'       => Element\Checkbox::class,
                     'Checkbox'       => Element\Checkbox::class,

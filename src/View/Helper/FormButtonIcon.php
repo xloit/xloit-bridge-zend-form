@@ -79,7 +79,6 @@ class FormButtonIcon extends FormButton
      *
      * @return string
      * @throws \Zend\Form\Exception\InvalidArgumentException
-     * @throws \Zend\Form\Exception\DomainException
      */
     public function openTag($attributesOrElement = null)
     {

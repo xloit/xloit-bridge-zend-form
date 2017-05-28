@@ -38,13 +38,12 @@ class FormCkEditor extends FormTextarea
     protected $wrapper = '<div id="content-editor-container" class="editor-container">%s</div>';
 
     /**
-     * Invoke helper.
-     * Proxies to {@link render()}.
+     * Invoke helper. Proxies to {@link render()}.
      *
      * @param ElementInterface $element
      * @param array            $options
      *
-     * @return string|FormCkEditor
+     * @return string|$this
      * @throws \Zend\Form\Exception\DomainException
      */
     public function __invoke(ElementInterface $element = null, $options = [])

@@ -17,7 +17,6 @@
 
 namespace Xloit\Bridge\Zend\Form\Element;
 
-use Zend\Filter;
 use Zend\Form\Element\Email as EmailElement;
 use Zend\Validator;
 

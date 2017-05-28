@@ -31,8 +31,8 @@ class YesNoSelect extends Select
     /**
      * Constructor to prevent {@link YesNoSelect} from being loaded more than once.
      *
-     * @param  null|int|string $name    Optional name for the element
-     * @param  array           $options Optional options for the element
+     * @param string|null $name    Optional name for the element.
+     * @param array       $options Optional options for the element.
      *
      * @throws \Zend\Form\Exception\InvalidArgumentException
      */
@@ -44,8 +44,7 @@ class YesNoSelect extends Select
     }
 
     /**
-     * Provide default input rules for this element
-     * Attaches an password validator.
+     * Provide default input rules for this element and attaches an password validator.
      *
      * @return array
      */

@@ -55,8 +55,8 @@ class RangeFilter extends Element implements ElementPrepareAwareInterface
     /**
      * Constructor to prevent {@link RangeFilter} from being loaded more than once.
      *
-     * @param  null|int|string $name    Optional name for the element
-     * @param  array           $options Optional options for the element
+     * @param string|null $name    Optional name for the element.
+     * @param array       $options Optional options for the element.
      *
      * @throws \Zend\Form\Exception\InvalidArgumentException
      */
@@ -73,7 +73,7 @@ class RangeFilter extends Element implements ElementPrepareAwareInterface
      *
      * @param array|\Traversable $options
      *
-     * @return static
+     * @return $this
      * @throws \Zend\Form\Exception\InvalidArgumentException
      */
     public function setOptions($options)
@@ -96,9 +96,9 @@ class RangeFilter extends Element implements ElementPrepareAwareInterface
     /**
      * Set the element value.
      *
-     * @param  mixed $value
+     * @param mixed $value
      *
-     * @return static
+     * @return $this
      */
     public function setValue($value)
     {
@@ -133,9 +133,9 @@ class RangeFilter extends Element implements ElementPrepareAwareInterface
      *
      * @param Element\Number $startElement
      *
-     * @return static
+     * @return $this
      */
-    public function setStartElement($startElement)
+    public function setStartElement(Element\Number $startElement)
     {
         $this->startElement = $startElement;
 
@@ -157,9 +157,9 @@ class RangeFilter extends Element implements ElementPrepareAwareInterface
      *
      * @param Element\Number $endElement
      *
-     * @return static
+     * @return $this
      */
-    public function setEndElement($endElement)
+    public function setEndElement(Element\Number $endElement)
     {
         $this->endElement = $endElement;
 
@@ -181,9 +181,9 @@ class RangeFilter extends Element implements ElementPrepareAwareInterface
     /**
      * Prepare the form element (mostly used for rendering purposes).
      *
-     * @param  FormInterface $form
+     * @param FormInterface $form
      *
-     * @return mixed
+     * @return void
      */
     public function prepareElement(FormInterface $form)
     {

@@ -33,7 +33,7 @@ class Date extends ZendDate
      * Accepted options for DateTime:
      * - format: A \DateTime compatible string
      *
-     * @param  array|Traversable $options
+     * @param array|Traversable $options
      *
      * @return Date
      */

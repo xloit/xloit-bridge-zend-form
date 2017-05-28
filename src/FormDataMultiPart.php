@@ -27,8 +27,8 @@ class FormDataMultiPart extends Form
     /**
      * Constructor to prevent {@link FormDataMultiPart} from being loaded more than once.
      *
-     * @param  null|int|string $name
-     * @param  array           $options
+     * @param string|null $name
+     * @param array       $options
      *
      * @throws \Zend\Form\Exception\InvalidArgumentException
      */
@@ -42,10 +42,10 @@ class FormDataMultiPart extends Form
     /**
      * Set a single element attribute.
      *
-     * @param  string $key
-     * @param  mixed  $value
+     * @param string $key
+     * @param mixed  $value
      *
-     * @return static
+     * @return $this
      */
     public function setAttribute($key, $value)
     {

@@ -43,7 +43,7 @@ class FormLabel extends ZendFormLabel
      * @param string           $labelContent
      * @param string           $position
      *
-     * @return string|static
+     * @return string|$this
      * @throws \Zend\Form\Exception\DomainException
      */
     public function __invoke(ElementInterface $element = null, $labelContent = null, $position = null)

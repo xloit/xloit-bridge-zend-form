@@ -35,8 +35,8 @@ class Password extends ZendPassword implements ValidatorAwareInterface
     /**
      * Constructor to prevent {@link Password} from being loaded more than once.
      *
-     * @param  null|int|string $name
-     * @param  array           $options
+     * @param string|null $name
+     * @param array       $options
      *
      * @throws \Zend\Form\Exception\InvalidArgumentException
      */
@@ -50,8 +50,7 @@ class Password extends ZendPassword implements ValidatorAwareInterface
     }
 
     /**
-     * Provide default input rules for this element.
-     * Attaches an password validator.
+     * Provide default input rules for this element and attaches an password validator.
      *
      * @return array
      */

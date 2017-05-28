@@ -17,7 +17,6 @@
 
 namespace Xloit\Bridge\Zend\Form\View\Helper;
 
-use Zend\Form\Element;
 use Zend\Form\Element\Button;
 use Zend\Form\Element\Collection as CollectionElement;
 use Zend\Form\ElementInterface;
