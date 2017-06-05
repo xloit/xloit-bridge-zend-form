@@ -34,7 +34,6 @@ class Email extends EmailElement
      * @param array      $options
      *
      * @throws \Zend\Form\Exception\InvalidArgumentException
-     * @throws Validator\Exception\InvalidArgumentException
      */
     public function __construct($name = 'email', $options = [])
     {

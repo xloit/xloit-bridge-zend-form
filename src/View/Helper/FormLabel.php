@@ -48,6 +48,10 @@ class FormLabel extends ZendFormLabel
      */
     public function __invoke(ElementInterface $element = null, $labelContent = null, $position = null)
     {
+        if (!$element) {
+            return $this;
+        }
+
         $this->addLabelClass(
             $element,
             [

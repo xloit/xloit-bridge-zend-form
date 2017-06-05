@@ -54,7 +54,9 @@ class FormDataMultiPart extends Form
             $value = 'multipart/form-data';
         }
 
-        return parent::setAttribute($key, $value);
+        parent::setAttribute($key, $value);
+
+        return $this;
     }
 
     /**
